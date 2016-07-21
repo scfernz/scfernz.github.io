@@ -44,6 +44,7 @@ p {
     }
 }
 
+
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
@@ -55,6 +56,13 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: #1d9b6c;
+}
+
+.portrait {
+  height: 200px;
+  width: 200px;
+  border: 5px solid #FFF;
+  border-radius: 50%;
 }
 
 .light {
@@ -258,10 +266,10 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
-.download-section {
+.skills-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -308,16 +316,6 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
-.carousel-inner {
-  width:100%;
-  max-height: 200px !important;
-}
-
-.carousel-inner > .item > a > img {
-  max-height: 200px;    /* Set slide height here */
-
-}
-
 .btn-default {
     border: 1px solid #42dca3;
     color: #42dca3;
@@ -326,6 +324,7 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
+    transform: scale(1.1);
     border: 1px solid #42dca3;
     outline: 0;
     color: #000;
