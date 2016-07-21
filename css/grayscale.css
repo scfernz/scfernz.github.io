@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/bg-int2.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -223,7 +223,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -240,7 +240,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -265,12 +265,16 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/mid2.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.thumb {
+  height:200px;
 }
 
 #map {
@@ -304,6 +308,16 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
+.carousel-inner {
+  width:100%;
+  max-height: 200px !important;
+}
+
+.carousel-inner > .item > a > img {
+  max-height: 200px;    /* Set slide height here */
+
+}
+
 .btn-default {
     border: 1px solid #42dca3;
     color: #42dca3;
@@ -316,6 +330,11 @@ a:focus {
     outline: 0;
     color: #000;
     background-color: #42dca3;
+}
+
+.devicons {
+  height: 50px;
+  width: 50px;
 }
 
 ul.banner-social-buttons {
