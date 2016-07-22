@@ -59,8 +59,8 @@ a:focus {
 }
 
 .portrait {
-  height: 200px;
-  width: 200px;
+  height: 30%;
+  width: 30%;
   border: 5px solid #FFF;
   border-radius: 50%;
 }
@@ -128,6 +128,10 @@ a:focus {
 
 .navbar-custom .nav li.active a:hover {
     color: #fff;
+}
+
+.wow {
+  visibility: hidden;
 }
 
 @media(min-width:768px) {
