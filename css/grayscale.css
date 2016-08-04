@@ -270,7 +270,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .skills-section {
@@ -310,7 +310,16 @@ a:focus {
     }
 }
 
+.modal {
+  color: black;
+}
+
+.modal-header {
+  background-color: #42dca3;
+}
+
 .btn {
+    margin: 5px;
     border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -319,6 +328,15 @@ a:focus {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
+.btn-primary, .btn-primary:hover,
+.btn-primary:focus {
+    border: 1px solid #42dca3;
+    color: #000;
+    background-color: #42dca3;
+}
+
+
 
 .btn-default {
     border: 1px solid #42dca3;
@@ -359,6 +377,10 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .portrait {
+      border: 4px solid #FFF;
     }
 }
 
