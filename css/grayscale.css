@@ -318,6 +318,11 @@ a:focus {
   background-color: #42dca3;
 }
 
+.p-circle {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 .btn {
     margin: 5px;
     border-radius: 0;
