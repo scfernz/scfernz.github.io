@@ -188,10 +188,15 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>My Projects</h2>
                 <div class="row">
-                  <div class="col-sm-4 col-sm-offset-4">
+                  <div class="col-sm-6">
                     <p>Paul's Planner</p>
                     <p><img class="projects p-circle" src="img/planner-sq.jpeg" alt="planner_app"></p>
-                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal">View Details</button></p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#pauls-planner-modal">View Details</button></p>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>Throtl</p>
+                    <p><img class="projects p-circle" src="img/throtl_screencap-sq.jpg" alt="throtl_app"></p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#throtl-modal">View Details</button></p>
                   </div>
                 </div>
                 <p>More projects underway! Check out my <a href="https://www.github.com/scfernz">github</a> to see what I've been working on!</p>
@@ -221,7 +226,7 @@
         </div>
     </section>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pauls-planner-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -233,7 +238,7 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <div id="owl-carousel" class="owl-theme">
+                <div id="planner-carousel" class="owl-theme">
                   <div class="item"><img class="img-responsive" src="img/p_planner1.png" alt="planner_app"></div>
                   <div class="item"><img class="img-responsive" src="img/p_planner2.png" alt="planner_app2"></div>
                   <div class="item"><img class="img-responsive" src="img/p_planner3.png" alt="planner_app3"></div>
@@ -256,8 +261,37 @@
           </div>
         </div>
       </div>
+      <!-- End Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="throtl-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">throtl</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <img class="img-responsive" src="img/throtl_screencap.png">
+              </div>
+            </div>
+            <br>
+            <p>Throtl is a Car Enthusiast Marketplace Web Application. I was able to intern at throtl and got a well-rounded experience working on their platform. I was given development tasks which required using Ruby On Rails, HAML, CSS (SASS), AJAX, Angular and Javascript. At throtl we used Trello for project management and Slack for communication.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="col-sm-6 col-sm-offset-3">
+              <a href="http://www.throtl.com" style="color: black"><button type="button" class="btn btn-block btn-primary btn-active">See app live</button></a>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
     </div>
-    <!-- End Modal -->
     <!-- Footer -->
     <footer>
         <div class="container text-center">
