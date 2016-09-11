@@ -16,7 +16,6 @@
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
-	padding: 3px 10px;
 	font-size: 12px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -31,7 +30,22 @@
 	opacity: 1;
 	text-decoration: none;
 }
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 25%;
+  margin: auto !important;
+}
 
+.owl-controls .owl-prev {
+  left: -45px;
+}
+
+.owl-controls .owl-next {
+  right: -45px;
+}
 /* Styling Pagination*/
 
 .owl-theme .owl-controls .owl-page{
