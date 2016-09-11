@@ -15,4 +15,18 @@ $(document).ready(function() {
 
   });
 
+  $("#testimonial-carousel").owlCarousel({
+
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 1000,
+      pagination: false,
+      autoPlay: true,
+      autoHeight: false,
+      navigationText: [
+      "<i class='fa fa-chevron-left white fa-2x'></i>",
+      "<i class='fa fa-chevron-right white fa-2x'></i>"
+      ],
+      singleItem:true
+
+  });
 });
