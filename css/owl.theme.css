@@ -30,14 +30,14 @@
 	opacity: 1;
 	text-decoration: none;
 }
-.owl-controls .owl-prev,
+/*.owl-controls .owl-prev,
 .owl-controls .owl-next {
   position: absolute;
   top: 0;
   bottom: 0;
   height: 25%;
   margin: auto !important;
-}
+}*/
 
 .owl-controls .owl-prev {
   left: -45px;
