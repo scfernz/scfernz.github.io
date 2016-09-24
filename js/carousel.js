@@ -2,9 +2,9 @@ $(document).ready(function() {
 
   $("#planner-carousel").owlCarousel({
 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      pagination: false,
+      // navigation : true, // Show next and prev buttons
+      // slideSpeed : 300,
+      pagination: true,
       autoPlay: true,
       autoHeight: true,
       navigationText: [
@@ -17,11 +17,13 @@ $(document).ready(function() {
 
   $("#testimonial-carousel").owlCarousel({
 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 1000,
-      pagination: false,
-      autoPlay: true,
+      // navigation : true, // Show next and prev buttons
+      // slideSpeed : 500,
+      pagination: true,
+      paginationSpeed: 800,
+      autoPlay: 10000,
       autoHeight: false,
+      stopOnHover: true,
       navigationText: [
       "<i class='fa fa-chevron-left white fa-2x'></i>",
       "<i class='fa fa-chevron-right white fa-2x'></i>"
