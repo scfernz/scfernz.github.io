@@ -21,7 +21,7 @@ $(document).ready(function() {
       // slideSpeed : 500,
       pagination: true,
       paginationSpeed: 800,
-      autoPlay: 10000,
+      autoPlay: 20000,
       autoHeight: false,
       stopOnHover: true,
       navigationText: [
