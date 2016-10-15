@@ -189,18 +189,23 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="container content-section text-center">
         <div class="row wow animated fadeInUp">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-sm-12">
                 <h2>My Projects</h2>
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-sm-4">
                     <p>Paul's Planner</p>
                     <p><img class="projects p-circle" src="img/planner-sq.jpeg" alt="planner_app"></p>
                     <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#pauls-planner-modal">View Details</button></p>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-4">
                     <p>Throtl</p>
                     <p><img class="projects p-circle" src="img/throtl_screencap-sq.jpg" alt="throtl_app"></p>
                     <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#throtl-modal">View Details</button></p>
+                  </div>
+                  <div class="col-sm-4">
+                    <p>Redditplica</p>
+                    <p><img class="projects p-circle" src="img/redditplica_screencap-sq.png" alt="redditplica_app"></p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#redditplica-modal">View Details</button></p>
                   </div>
                 </div>
                 <p>More projects underway! Check out my <a href="https://www.github.com/scfernz">github</a> to see what I've been working on!</p>
@@ -316,6 +321,37 @@
               <a href="http://www.throtl.com" style="color: black"><button type="button" class="btn btn-block btn-primary btn-active">See app live</button></a>
             </div>
             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="redditplica-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">throtl</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <img class="img-responsive" src="img/redditplica_screencap.png">
+              </div>
+            </div>
+            <br>
+            <p>Redditplica is a reddit clone built with Ruby on Rails with an Angular front-end, it is very dynamic. I started this project so I could gain a better understanding of Angular 1.x which I had to use for my internship. Users can create posts, upvote/downvote posts, and comment. I also took the opportunity to re-design Reddit by following some of Google's Material Design principles.</p>
+          </div>
+          <div class="modal-footer">
+              <div class="col-sm-6">
+                <a href="http://redditplica.herokuapp.com" style="color: black"><button type="button" class="btn btn-block btn-primary btn-active">See app live</button></a>
+              </div>
+              <div class="col-sm-6">
+                <a href="https://github.com/scfernz/redditplica" style="color: black;"><button type="button" class="btn btn-block btn-secondary" data-dismiss="modal">Github Repo</button></a>
+              </div>
             </div>
           </div>
         </div>
