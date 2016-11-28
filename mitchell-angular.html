@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Mitchell UI Design Challenge - Responsive</title>
+        <!-- font awesome library -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- roboto font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+        <!-- angular material css cdn -->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <!-- custom stylesheet -->
+        <link rel="stylesheet" href="css/m-styles-resp.css" type="text/css">
+    </head>
+
+    <body ng-app="ui-challenge" ng-cloak>
+      <!-- analytics section -->
+      <section class="analytics card" layout-margin="20" flex>
+        <div layout="row" flex>
+                    <div flex="70">
+                        <div class="analytics-header">
+                            <h2>Total Movie Sales</h2>
+                            <p>Comparison - Movie 1 and Movie 2</p>
+                        </div>
+                        <div>
+                            <canvas class="graph" id="myChart"></canvas>
+                        </div>
+                        <div class="sales-analysis">
+                            <p>
+                                <strong>Analysis of Sales:</strong>
+                                The value has been changed over time, and last month reached a level over $50,000.
+                            </p>
+                        </div>
+                    </div>
+                    <div flex="30">
+                        <div class="sales-info">
+                            <p>Average value of sales in the past month in:
+                                <strong>United States</strong>
+                            </p>
+                            <p>All sales: 162,862</p>
+                        </div>
+                        <div class="orders">
+                            <p class="order-number">2,346</p>
+                            <p>Total Orders - Movie 1</p>
+                            <div class="slider">
+                                <div class="bar"></div>
+                                <div class="bar-overlay grey"></div>
+                            </div>
+                            <p class="order-number">4,422</p>
+                            <p>Total Orders - Movie 2</p>
+                            <div class="slider">
+                                <div class="bar"></div>
+                                <div class="bar-overlay teal"></div>
+                            </div>
+                        </div>
+                        <p class="text-right">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            Update on 16.07.2015</p>
+                    </div>
+            </div>
+          </section>
+        <!-- end analytics section -->
+    </div>
+    <div layout="row" layout-xs="column" flex layout-margin="20">
+    <div layout-sm="column" layout-md="row" flex>
+        <!-- movie 1 section -->
+        <section class="movie card" flex>
+            <div class="movie-header">
+                <h1>Movie 1</h1>
+                <p>
+                    <strong>Release Date</strong>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    04 Jan 2015</p>
+            </div>
+            <div class="movie-date flex-space-around">
+                <h4>May 3 2015</h4>
+                <h4>
+                    <md-button class="btn-primary">Buy Tickets</md-button>
+                </h4>
+            </div>
+            <div class="movie-date flex-space-around">
+                <h4>May 4 2015</h4>
+                <h4>
+                    <md-button class="btn-primary">Buy Tickets</md-button>
+                </h4>
+            </div>
+        </section>
+        <!-- end movie 1 section -->
+    </div>
+    <div layout-sm="column" layout-md="row" flex>
+        <!-- movie 2 section -->
+        <section class="movie card" flex>
+            <div class="movie-header">
+                <h1>Movie 2</h1>
+                <p>
+                    <strong>Release Date</strong>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    04 Jan 2015</p>
+            </div>
+            <div class="movie-date flex-space-around">
+                <h4>May 3 2015</h4>
+                <h4>
+                    <md-button class="btn-primary">Buy Tickets</md-button>
+                </h4>
+            </div>
+            <div class="movie-date flex-space-around">
+                <h4>May 4 2015</h4>
+                <h4>
+                    <md-button class="btn-primary">Buy Tickets</md-button>
+                </h4>
+            </div>
+        </section>
+      </div>
+        <!-- end movie 2 section -->
+    </div>
+</div>
+<!-- chart.js cdn files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+<script src="js/chart.js"></script>
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<!-- Your application bootstrap  -->
+<script type="text/javascript">
+    /**
+   * You must include the dependency on 'ngMaterial'
+   */
+    angular.module('ui-challenge', ['ngMaterial']);
+</script>
+</body>
+
+</html>
