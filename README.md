@@ -3,6 +3,7 @@
 # Personal Portfolio Website
 
 # TODO:
-# - Various appearance changes
-# - Add more projects
-# - Possibly create blog
+# - Add design work
+# - Add more personal projects
+# - Add presentations and talks
+# - Re-design portfolio site
