@@ -5,5 +5,5 @@
 # TODO:
 # - Add design work
 # - Add more personal projects
-# - Add presentations and talks
+# - Add button to separate Projects / Work / Design
 # - Re-design portfolio site
