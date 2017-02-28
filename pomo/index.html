@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro Flip Clock by scfernz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flipclock.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro Flip Clock</h1>
+    </header>
+    <section class="timer-options">
+      <div class="pomodoro">
+        Pomodoro
+      </div>
+      <div class="spacer">|</div>
+      <div class="break">
+        Break
+      </div>
+      <div class="spacer">|</div>
+      <div class="custom">
+        Set Time
+      </div>
+    </section>
+    <div class="clock-body">
+      <div class="your-clock"></div>
+    </div>
+    <section class="buttons">
+      <div class="start">
+        <div class="btn" id="start-btn"></div>
+        <p>Start</p>
+      </div>
+      <div class="stop">
+        <div class="btn" id="stop-btn"></div>
+        <p>Stop</p>
+      </div>
+      <div class="reset">
+        <div class="btn" id="reset-btn"></div>
+        <p>Reset</p>
+      </div>
+    </section>
+
+    <audio id="ghd" src="ghd-audio.mp3"></audio>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+    <script type="text/javascript">
+      const audio = document.getElementById('ghd');
+      let pomoTime = 1500;
+      let breakTime = 300;
+
+      $('.pomodoro').append(`(${pomoTime / 60}m)`);
+      $('.break').append(`(${breakTime / 60}m)`);
+      var clock = $('.your-clock').FlipClock(pomoTime, {
+        clockFace: 'MinuteCounter',
+        countdown: true,
+        showSeconds: true
+      });
+
+      setInterval(() => {
+        console.log('checking');
+        if (clock.time.time === 0) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.load();
+        }
+      }, 3000);
+
+      function stopClock() {
+        clock.stop();
+      }
+
+      function startClock() {
+        clock.start();
+      }
+
+      function resetClock() {
+        clock = $('.your-clock').FlipClock(pomoTime, {
+          clockFace: 'MinuteCounter',
+          countdown: true,
+          showSeconds: true
+        });
+      }
+
+      function setNewPomoTime() {
+        pomoTime = prompt('How many minutes would you like to set the pomodoro timer to?') * 60;
+        $('.pomodoro').text(`Pomodoro (${pomoTime / 60}m)`);
+        breakTime = prompt('How many minutes would you like to set the break timer to?') * 60;
+        $('.break').text(`Break (${breakTime / 60}m)`);
+        resetClock();
+      }
+
+      function runBreak() {
+        clock = $('.your-clock').FlipClock(breakTime, {
+          clockFace: 'MinuteCounter',
+          countdown: true,
+          showSeconds: true
+        });
+      }
+
+      $('.pomodoro').on('click', resetClock);
+      $('.break').on('click', runBreak);
+      $('.custom').on('click', setNewPomoTime);
+      $('#start-btn').on('click', startClock);
+      $('#stop-btn').on('click', stopClock);
+      $('#reset-btn').on('click', resetClock);
+    </script>
+  </body>
+</html>

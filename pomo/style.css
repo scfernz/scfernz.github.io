@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #999;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  text-align: center;
+  color: wheat;
+}
+
+.timer-options {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: #222;
+  border-radius: 10px;
+  max-width: 600px;
+  color: tomato;
+  margin: 2em auto;
+}
+
+.spacer {
+  color: darkkhaki;
+}
+
+.clock-body {
+  height: 200px;
+  width: 400px;
+  border-radius: 35px;
+  margin: 0 auto;
+  background-color: #eee;
+  /*box-shadow: -8px 9px 2px #777;*/
+}
+
+.your-clock {
+  top: 50px;
+  left: 40px;
+}
+
+.flip-clock-label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+  max-width: 400px;
+  margin: 3em auto;
+  color: wheat;
+  display: flex;
+  justify-content: space-around;
+}
+
+.start, .stop, .reset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start {
+  color: #66CDAA;
+}
+.stop {
+  color: #B33A3A;
+}
+.reset {
+  color: #777;
+}
+
+#start-btn:after {
+  content: "►";
+  top: 17px;
+  position: relative;
+  left: 23px;
+  font-size: 2em;
+  text-shadow: 2px 2px 2px #7ec;
+}
+
+#stop-btn:after {
+  content: "✖";
+  font-size: 2.5em;
+  left: 20px;
+  position: relative;
+  top: 10px;
+  text-shadow: 2px 2px 2px #EAB;
+}
+
+#reset-btn:after {
+  content: "↺";
+  font-size: 2.5em;
+  left: 19px;
+  position: relative;
+  top: 8px;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+
+.btn {
+  /*background: -webkit-linear-gradient(#f4f1ee, #fff);
+  background: -o-linear-gradient(#f4f1ee, #fff);*/
+  background: linear-gradient(#f4f1ee, #fff);
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .8), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+  border-radius: 50%;
+  height: 70px;
+  /*margin: 0 30px 30px 0;*/
+  position: relative;
+  width: 70px;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.btn:active{
+  /*background: -webkit-linear-gradient(top, #efedec, #f7f4f4);*/
+  background: linear-gradient(top, #efedec, #f7f4f4);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+.btn:active:after{
+  /*color:#dbd2d2;*/
+  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
